@@ -15,23 +15,7 @@ diffu=12;  % parameter to diffuminate the ensemble members in the plot
 nens=50;   % number of ensembles
 test=0;      % Shapiro-Wilk--> 0    Kolmogorov-Smirnov --> 1
 
-%state=1
-lat=linspace(5.83,6.82,12);
-lon=linspace(-76.15,-75.16,12);
 
-load EnseMem_column_50_2.mat     % Load the 50 ensembles from different configuration seems
-Ens50_2=EnseMem_column(:,:,1:50);
-load EnseMem_column_50.mat     % Load the 50 ensembles
-Ens50=EnseMem_column(:,:,1:50);
-load EnseMem_column_100.mat     % Load the 100 ensembles
-Ens100=EnseMem_column(:,:,1:100);
-load EnseMem_column_130.mat     % Load the 130 ensembles
-Ens130=EnseMem_column(:,:,1:130);
-load EnseMem_column_150.mat     % Load the 150 ensembles
-Ens150=EnseMem_column(:,:,1:150);
-load EnseMem_column_200.mat     % Load the 200 ensembles
-Ens200=EnseMem_column(:,:,1:200);
- 
 Ensemble=EnseMem_column(:,:,1:nens);
 
 
