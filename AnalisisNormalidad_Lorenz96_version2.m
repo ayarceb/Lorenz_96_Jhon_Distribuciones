@@ -1,12 +1,12 @@
 clear all;close all;clc
 
-NumeroExperimentos=1000
+NumeroExperimentos=100
 
 
 for j=1:NumeroExperimentos
 fprintf('NumeroExperimento=%i \n',j)
 
-ALPHA=0.3; % Nivel de significancia entre más alto más probabilidad de rechazar, el test es más exigente
+ALPHA=0.05; % Nivel de significancia entre más alto más probabilidad de rechazar, el test es más exigente
 N=100;
 F=8;
 Tsim=500;
