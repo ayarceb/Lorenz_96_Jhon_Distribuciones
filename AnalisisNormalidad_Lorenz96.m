@@ -4,7 +4,7 @@ NumeroExperimentos=1
 
 
 
-nens=40;
+nens=500;
 ALPHA=0.1; % Nivel de significancia entre más alto más probabilidad de rechazar, el test es más exigente
 N=100;
 F=8;
@@ -44,8 +44,8 @@ cont=1
 % hist(A)
 % title('Distribution before')
  subplot(3,4,cont)
-hist(newA,nens/2);
-histfit(newA,nens/2,'kernel')
+hist(newA,nens/50);
+histfit(newA,nens/50,'kernel')
 normalitytest(xb(:,i,1)')
  if h==1
  title({sprintf('p value is %i',p),sprintf('h value is %i, rejected',h),sprintf('Time simulation = %i',i),sprintf(' SWstatistics %i',SWstatistic)})
